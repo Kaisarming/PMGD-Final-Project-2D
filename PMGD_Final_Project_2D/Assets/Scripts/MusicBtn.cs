@@ -5,25 +5,27 @@ using UnityEngine.UI;
 
 public class MusicBtn : MonoBehaviour
 {
-    public Sprite newButtonImage;
-    public Sprite oldButtonImage;
-    public Button button;
+    public Image imageMuteButton;
+
     void Start()
     {
-        button.image.sprite = oldButtonImage;
+
     }
 
     void Update()
     {
-        if (button.image.sprite == oldButtonImage)
-        {
-            button.image.sprite = newButtonImage;
-        }
 
-        if (button.image.sprite == newButtonImage)
-        {
-            button.image.sprite = oldButtonImage;
-        }
+    }
 
+    public void MuteButton()
+    {
+        if (Button.ButtonClickedEvent)
+        {
+            imageMuteButton.sprite = muteSprite[1];
+        }
+        else
+        {
+            imageMuteButton.sprite = muteSprite[0];
+        }
     }
 }
