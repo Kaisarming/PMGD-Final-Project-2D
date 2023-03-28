@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 489000801}
   - component: {fileID: 489000803}
   - component: {fileID: 489000802}
+  - component: {fileID: 489000804}
   m_Layer: 5
   m_Name: Option Panel
   m_TagString: Untagged
@@ -536,6 +537,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489000800}
   m_CullTransparentMesh: 1
+--- !u!114 &489000804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489000800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c651d495610dee4bb601f10df45c419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1936010458}
+  musicButton: {fileID: 1037299374}
+  muteButton: {fileID: 713788389}
+  musicIcon: {fileID: 1037299372}
+  muteIcon: {fileID: 713788387}
 --- !u!1 &494257815
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &713788388
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1313,7 +1331,6 @@ GameObject:
   - component: {fileID: 1037299376}
   - component: {fileID: 1037299375}
   - component: {fileID: 1037299374}
-  - component: {fileID: 1037299377}
   m_Layer: 5
   m_Name: MusicBtn
   m_TagString: Untagged
@@ -1424,22 +1441,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037299372}
   m_CullTransparentMesh: 1
---- !u!114 &1037299377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037299372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c651d495610dee4bb601f10df45c419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 1936010458}
-  musicButton: {fileID: 1037299374}
-  musicIcon: {fileID: -2841485900300867772, guid: 236587ec711348a4792e0060efb1bf73, type: 3}
-  muteIcon: {fileID: -282344050, guid: 79312e39c4cbb954d822a653f5bc5b38, type: 3}
 --- !u!1 &1055673675
 GameObject:
   m_ObjectHideFlags: 0

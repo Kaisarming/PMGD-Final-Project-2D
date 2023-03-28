@@ -7,28 +7,46 @@ public class MusicButton : MonoBehaviour
 {
     public AudioSource audioSource;
     public Button musicButton;
-    public Sprite musicIcon;
-    public Sprite muteIcon;
+    public Button muteButton;
+    public GameObject musicIcon;
+    public GameObject muteIcon;
 
     private bool isMuted = false;
 
     private void Start()
     {
-        musicButton.onClick.AddListener(ToggleSound);
+        muteIcon.SetActive(false);
+        musicButton.onClick.AddListener(MusicMute);
+        muteButton.onClick.AddListener(MusicOn);
     }
 
-    private void ToggleSound()
+    private void MusicMute()
     {
         isMuted = !isMuted;
         if (isMuted)
         {
             audioSource.mute = true;
-            musicButton.image.sprite = muteIcon;
+            muteIcon.SetActive(true);
         }
         else
         {
             audioSource.mute = false;
-            musicButton.image.sprite = musicIcon;
+            muteIcon.SetActive(false);
+        }
+    }
+
+    private void MusicOn()
+    {
+        isMuted = !isMuted;
+        if (isMuted)
+        {
+            audioSource.mute = false;
+            muteIcon.SetActive(false);
+        }
+        else
+        {
+            audioSource.mute = true;
+            muteIcon.SetActive(true);
         }
     }
 }
