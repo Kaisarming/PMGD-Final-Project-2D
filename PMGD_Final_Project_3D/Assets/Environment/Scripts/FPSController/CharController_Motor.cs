@@ -13,6 +13,7 @@ public class CharController_Motor : MonoBehaviour {
 	float rotX, rotY;
 	public bool webGLRightClickRotation = true;
 	float gravity = -9.8f;
+	public Animator playerAnim;
 
 
 	void Start(){
@@ -35,8 +36,13 @@ public class CharController_Motor : MonoBehaviour {
 
 
 
-	void Update(){
-		moveFB = Input.GetAxis ("Horizontal") * speed;
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.W))
+		{
+			playerAnim.SetTrigger("walk");
+		}
+			moveFB = Input.GetAxis ("Horizontal") * speed;
 		moveLR = Input.GetAxis ("Vertical") * speed;
 
 		rotX = Input.GetAxis ("Mouse X") * sensitivity;
