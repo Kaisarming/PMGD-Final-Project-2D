@@ -60,4 +60,5 @@ public class GameTimeLimit : MonoBehaviour
         // Menampilkan layar kemenangan atau kekalahan atau kembali ke menu utama
         // (tidak termasuk dalam contoh script ini)
     }
+    
 }
