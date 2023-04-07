@@ -12,7 +12,7 @@ public class PauseBtn : MonoBehaviour
     private Image buttonImage; // Komponen Image dari tombol
     public GameObject showPanel;
 
-    private void Start()
+    void Start()
     {
         buttonImage = GetComponent<Image>(); // Mengambil komponen Image dari tombol
         showPanel.SetActive(false);
