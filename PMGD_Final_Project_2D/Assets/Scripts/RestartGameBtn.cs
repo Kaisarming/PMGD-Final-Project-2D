@@ -5,16 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class RestartGameBtn : MonoBehaviour
 {
-    public GameObject car;
-    private Vector3 carInitialPosition;
-
-   
-    // Start is called before the first frame update
-    public void Restart()
+    public void RestartGame()
     {
         SceneManager.LoadScene("GamePlay");
-
     }
-
-    
 }
