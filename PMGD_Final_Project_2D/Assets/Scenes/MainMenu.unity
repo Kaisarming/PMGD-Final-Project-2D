@@ -2242,7 +2242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71a5c9f77efdb346891833ee962aa2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GamePlay
+  sceneName: GameLevel
   button: {fileID: 1595838670}
 --- !u!114 &1595838670
 MonoBehaviour:
