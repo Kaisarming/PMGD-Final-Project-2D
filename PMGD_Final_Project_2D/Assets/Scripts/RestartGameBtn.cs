@@ -8,5 +8,6 @@ public class RestartGameBtn : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene("GamePlay");
+        Time.timeScale = 1;
     }
 }
