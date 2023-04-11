@@ -38,10 +38,6 @@ public class CharController_Motor : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.W))
-		{
-			playerAnim.SetTrigger("walk");
-		}
 			moveFB = Input.GetAxis ("Horizontal") * speed;
 		moveLR = Input.GetAxis ("Vertical") * speed;
 
