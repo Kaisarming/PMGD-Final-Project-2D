@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MuteBtn_0: -282344050
       MuteBtn_1: 387058836
+      MuteBtn_0: -282344050
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
