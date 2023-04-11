@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: 5c1f002255e474f4d8f1f558e712ef7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7613270608789515706
+    second: Kitchen+asserseries_0
+  - first:
+      213: -8594543329046721175
+    second: Kitchen+asserseries_1
+  - first:
+      213: -321456955295433109
+    second: Kitchen+asserseries_2
+  - first:
+      213: 2237534971345005941
+    second: Kitchen+asserseries_3
+  - first:
+      213: 2516364985086280139
+    second: Kitchen+asserseries_4
+  - first:
+      213: 8665033948336096130
+    second: Kitchen+asserseries_5
+  - first:
+      213: -5133537256559126279
+    second: Kitchen+asserseries_6
+  - first:
+      213: -8111417398851596660
+    second: Kitchen+asserseries_7
+  - first:
+      213: 581053624810417682
+    second: Kitchen+asserseries_8
+  - first:
+      213: 936324249571200885
+    second: Kitchen+asserseries_9
+  - first:
+      213: 2834718930074726212
+    second: Kitchen+asserseries_10
+  - first:
+      213: 4400392895590414559
+    second: Kitchen+asserseries_11
+  - first:
+      213: -5372613803074979786
+    second: Kitchen+asserseries_12
+  - first:
+      213: 4445708474311748782
+    second: Kitchen+asserseries_13
+  - first:
+      213: -6976322121315792875
+    second: Kitchen+asserseries_14
+  - first:
+      213: -9204563632267462926
+    second: Kitchen+asserseries_15
+  - first:
+      213: -536944856335907010
+    second: Kitchen+asserseries_16
+  - first:
+      213: 5216312623196991553
+    second: Kitchen+asserseries_17
+  - first:
+      213: 2115093623663952130
+    second: Kitchen+asserseries_18
+  - first:
+      213: 1684106296798087398
+    second: Kitchen+asserseries_19
+  - first:
+      213: -439080255448281730
+    second: Kitchen+asserseries_20
+  - first:
+      213: -7270337836991197207
+    second: Kitchen+asserseries_21
+  - first:
+      213: -1478472696824687788
+    second: Kitchen+asserseries_22
+  - first:
+      213: 4816388303835269715
+    second: Kitchen+asserseries_23
+  - first:
+      213: 2322748802933500868
+    second: Kitchen+asserseries_24
+  - first:
+      213: -5957901394642348243
+    second: Kitchen+asserseries_25
+  - first:
+      213: -4201466910461212974
+    second: Kitchen+asserseries_26
+  - first:
+      213: -236470131589525093
+    second: Kitchen+asserseries_27
+  - first:
+      213: -378600470019850897
+    second: Kitchen+asserseries_28
+  - first:
+      213: -9193853394991749626
+    second: Kitchen+asserseries_29
+  - first:
+      213: -2188757051816551394
+    second: Kitchen+asserseries_30
+  - first:
+      213: -822742373889100772
+    second: Kitchen+asserseries_31
+  - first:
+      213: -3351527297800832424
+    second: Kitchen+asserseries_32
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kitchen+asserseries_0
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2780
+        width: 972
+        height: 1120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd22d72845c7a960800000000000000
+      internalID: 7613270608789515706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_1
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 2999
+        width: 757
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d8779c06c0ab880800000000000000
+      internalID: -8594543329046721175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_2
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 3257
+        width: 196
+        height: 647
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e79013a94f98bf0800000000000000
+      internalID: -321456955295433109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_3
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 2793
+        width: 794
+        height: 1116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d688393325d0f10800000000000000
+      internalID: 2237534971345005941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_4
+      rect:
+        serializedVersion: 2
+        x: 3357
+        y: 3419
+        width: 355
+        height: 489
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc18c452f9cebe220800000000000000
+      internalID: 2516364985086280139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_5
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 3418
+        width: 354
+        height: 489
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28306497772604870800000000000000
+      internalID: 8665033948336096130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_6
+      rect:
+        serializedVersion: 2
+        x: 3356
+        y: 2861
+        width: 354
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85f85501302c8b0800000000000000
+      internalID: -5133537256559126279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_7
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2874
+        width: 358
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e07841ad47e6f80800000000000000
+      internalID: -8111417398851596660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_8
+      rect:
+        serializedVersion: 2
+        x: 4403
+        y: 2607
+        width: 2412
+        height: 1316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e27467131501800800000000000000
+      internalID: 581053624810417682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1547
+        width: 2411
+        height: 1115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f8642b1fd7efc00800000000000000
+      internalID: 936324249571200885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_10
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 1412
+        width: 154
+        height: 1260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fed2119d1f65720800000000000000
+      internalID: 2834718930074726212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_11
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 1400
+        width: 152
+        height: 1265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8b1d53606511d30800000000000000
+      internalID: 4400392895590414559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_12
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1393
+        width: 223
+        height: 1260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638fa502634a075b0800000000000000
+      internalID: -5372613803074979786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_13
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 1212
+        width: 628
+        height: 1513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacab429d4452bd30800000000000000
+      internalID: 4445708474311748782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_14
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 1653
+        width: 759
+        height: 916
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518c5482eff1f2f90800000000000000
+      internalID: -6976322121315792875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_15
+      rect:
+        serializedVersion: 2
+        x: 5403
+        y: 2071
+        width: 530
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6f732f422d24080800000000000000
+      internalID: -9204563632267462926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_16
+      rect:
+        serializedVersion: 2
+        x: 6076
+        y: 2074
+        width: 745
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37002e7f736c88f0800000000000000
+      internalID: -536944856335907010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_17
+      rect:
+        serializedVersion: 2
+        x: 5249
+        y: 1501
+        width: 748
+        height: 476
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140fa0f81b0146840800000000000000
+      internalID: 5216312623196991553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 133
+        width: 1535
+        height: 1327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2010f29c1725a5d10800000000000000
+      internalID: 2115093623663952130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_19
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 956
+        width: 836
+        height: 477
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e806a011c52f5710800000000000000
+      internalID: 1684106296798087398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_20
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 551
+        width: 435
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d0e1285d218e9f0800000000000000
+      internalID: -439080255448281730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_21
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 567
+        width: 191
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efce05d1429a1b90800000000000000
+      internalID: -7270337836991197207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_22
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 194
+        width: 270
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45396af5ae86b7be0800000000000000
+      internalID: -1478472696824687788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_23
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 183
+        width: 273
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a827ed4af37d240800000000000000
+      internalID: 4816388303835269715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_24
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 180
+        width: 273
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cba055dabf0c3020800000000000000
+      internalID: 2322748802933500868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_25
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 698
+        width: 842
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27d9857f38415da0800000000000000
+      internalID: -5957901394642348243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_26
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 224
+        width: 435
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6c662fa1461b5c0800000000000000
+      internalID: -4201466910461212974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_27
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 695
+        width: 356
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91dd9e0ba3e7bcf0800000000000000
+      internalID: -236470131589525093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_28
+      rect:
+        serializedVersion: 2
+        x: 3857
+        y: 91
+        width: 349
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6dbba0e0e0febaf0800000000000000
+      internalID: -378600470019850897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_29
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 965
+        width: 2402
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6066f726c0fd86080800000000000000
+      internalID: -9193853394991749626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_30
+      rect:
+        serializedVersion: 2
+        x: 4438
+        y: 320
+        width: 430
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cd7d2de09ff91e0800000000000000
+      internalID: -2188757051816551394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_31
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 283
+        width: 481
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14bda68b280594f0800000000000000
+      internalID: -822742373889100772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen+asserseries_32
+      rect:
+        serializedVersion: 2
+        x: 5625
+        y: 489
+        width: 367
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a7e870eabfc71d0800000000000000
+      internalID: -3351527297800832424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kitchen+asserseries_0: 7613270608789515706
+      Kitchen+asserseries_1: -8594543329046721175
+      Kitchen+asserseries_10: 2834718930074726212
+      Kitchen+asserseries_11: 4400392895590414559
+      Kitchen+asserseries_12: -5372613803074979786
+      Kitchen+asserseries_13: 4445708474311748782
+      Kitchen+asserseries_14: -6976322121315792875
+      Kitchen+asserseries_15: -9204563632267462926
+      Kitchen+asserseries_16: -536944856335907010
+      Kitchen+asserseries_17: 5216312623196991553
+      Kitchen+asserseries_18: 2115093623663952130
+      Kitchen+asserseries_19: 1684106296798087398
+      Kitchen+asserseries_2: -321456955295433109
+      Kitchen+asserseries_20: -439080255448281730
+      Kitchen+asserseries_21: -7270337836991197207
+      Kitchen+asserseries_22: -1478472696824687788
+      Kitchen+asserseries_23: 4816388303835269715
+      Kitchen+asserseries_24: 2322748802933500868
+      Kitchen+asserseries_25: -5957901394642348243
+      Kitchen+asserseries_26: -4201466910461212974
+      Kitchen+asserseries_27: -236470131589525093
+      Kitchen+asserseries_28: -378600470019850897
+      Kitchen+asserseries_29: -9193853394991749626
+      Kitchen+asserseries_3: 2237534971345005941
+      Kitchen+asserseries_30: -2188757051816551394
+      Kitchen+asserseries_31: -822742373889100772
+      Kitchen+asserseries_32: -3351527297800832424
+      Kitchen+asserseries_4: 2516364985086280139
+      Kitchen+asserseries_5: 8665033948336096130
+      Kitchen+asserseries_6: -5133537256559126279
+      Kitchen+asserseries_7: -8111417398851596660
+      Kitchen+asserseries_8: 581053624810417682
+      Kitchen+asserseries_9: 936324249571200885
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
