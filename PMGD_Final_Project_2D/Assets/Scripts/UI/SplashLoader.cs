@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class SplashLoader : MonoBehaviour
 {
     private int ctr;
-    private GameObject Main;
+    public GameObject Main;
     private bool Trigger;
     private bool Switch;
+    public AudioSource BGM;
     public Image BG;
     public Image TargetImage;
     public Image Logo1;
@@ -21,7 +22,6 @@ public class SplashLoader : MonoBehaviour
         TargetImage.rectTransform.localScale = new Vector2(Screen.width, Screen.height);
         Logo1.enabled = true;
         Logo2.enabled = false;
-        Main = GameObject.Find("Main Menu");
         ctr=0;
     }
 
@@ -48,16 +48,18 @@ public class SplashLoader : MonoBehaviour
             Logo2.enabled = false;
             Invoke("FadeInFunc", Delay);
             Main.SetActive(true);
+            if (!BGM.isPlaying)
+            {BGM.Play();}
         }
         else if (ctr<3){
-            if (TargetImage.color.a <= 0.1f){
+            if (TargetImage.color.a <= 0.05f){
                 Switch = false;
                 Trigger = false;
                 if (!Switch){
                     Invoke("FadeOutFunc", Delay);
                 }
             }
-            if (TargetImage.color.a >= 0.9f){
+            if (TargetImage.color.a >= 0.95f){
                 Switch = true;
                 if (ctr==2){
                 Logo1.enabled = false;
