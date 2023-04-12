@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SplashLoader : MonoBehaviour
 {
     private int ctr;
+    public GameObject Splash;
     public GameObject Main;
     private bool Trigger;
     private bool Switch;
@@ -37,6 +38,7 @@ public class SplashLoader : MonoBehaviour
     void Start()
     {
         Trigger = false;
+        Splash.SetActive(true);
         Main.SetActive(false);
     }
 
@@ -50,6 +52,8 @@ public class SplashLoader : MonoBehaviour
             Main.SetActive(true);
             if (!BGM.isPlaying)
             {BGM.Play();}
+            if (TargetImage.color.a <= 0.05f)
+            {Splash.SetActive(false);}
         }
         else if (ctr<3){
             if (TargetImage.color.a <= 0.05f){
