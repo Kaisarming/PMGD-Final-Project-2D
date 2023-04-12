@@ -11,7 +11,7 @@ public class MusicButton : MonoBehaviour
     public GameObject musicIcon;
     public GameObject muteIcon;
 
-    private bool isMuted = false;
+    //private bool isMuted = false;
 
     private void Start()
     {
@@ -22,31 +22,35 @@ public class MusicButton : MonoBehaviour
 
     private void MusicMute()
     {
-        isMuted = !isMuted;
+        /*isMuted = !isMuted;
         if (isMuted)
-        {
+        {*/
             audioSource.mute = true;
             muteIcon.SetActive(true);
-        }
+            musicIcon.SetActive(false);
+        /*}
         else
         {
             audioSource.mute = false;
             muteIcon.SetActive(false);
-        }
+            musicIcon.SetActive(true);
+        }*/
     }
 
     private void MusicOn()
     {
-        isMuted = !isMuted;
+        /*isMuted = !isMuted;
         if (isMuted)
-        {
+        {*/
             audioSource.mute = false;
             muteIcon.SetActive(false);
-        }
+            musicIcon.SetActive(true);
+        /*}
         else
         {
             audioSource.mute = true;
             muteIcon.SetActive(true);
-        }
+            musicIcon.SetActive(false);
+        }*/
     }
 }
