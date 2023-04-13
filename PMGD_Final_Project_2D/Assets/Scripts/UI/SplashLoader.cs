@@ -37,9 +37,14 @@ public class SplashLoader : MonoBehaviour
 
     void Start()
     {
-        Trigger = false;
-        Splash.SetActive(true);
-        Main.SetActive(false);
+        if (ctr>3){
+            this.gameObject.SetActive(false);
+        }
+        else{
+            Trigger = false;
+            Splash.SetActive(true);
+            Main.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -53,7 +58,10 @@ public class SplashLoader : MonoBehaviour
             if (!BGM.isPlaying)
             {BGM.Play();}
             if (TargetImage.color.a <= 0.05f)
-            {Splash.SetActive(false);}
+            {
+                Splash.SetActive(false);
+                ctr++;
+            }
         }
         else if (ctr<3){
             if (TargetImage.color.a <= 0.05f){
