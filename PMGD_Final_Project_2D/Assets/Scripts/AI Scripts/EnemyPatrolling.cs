@@ -4,47 +4,38 @@ using UnityEngine;
 
 public class EnemyPatrolling : MonoBehaviour
 {
-    public float speed;
     public Transform[] waypoints;
-    public int index = 0;
+    public float speed = 5f;
+    public float rotationSpeed = 2f;
+    public float waypointRadius = 1f;
 
-    private bool isTurning = false;
-    private Vector3 targetRotation;
+    private int currentWaypoint = 0;
 
-    void Update()
+    private void Update()
     {
-        if (!isTurning)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, waypoints[index].position, speed * Time.deltaTime);
+        // Calculate the distance to the current waypoint
+        float distanceToWaypoint = Vector2.Distance(transform.position, waypoints[currentWaypoint].position);
 
-            if (transform.position == waypoints[index].position)
+        // If the car has reached the current waypoint, move to the next one
+        if (distanceToWaypoint < waypointRadius)
+        {
+            currentWaypoint++;
+            if (currentWaypoint >= waypoints.Length)
             {
-                index = (index + 1) % waypoints.Length;
-                isTurning = true;
-                targetRotation = transform.eulerAngles + new Vector3(0, 0, -90);
+                currentWaypoint = 0;
             }
         }
-        else
-        {
-            float rotationSpeed = 90.0f / speed;
-            transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetRotation, rotationSpeed * Time.deltaTime);
-            if (Mathf.Abs(transform.eulerAngles.z - targetRotation.z) < 0.01f)
-            {
-                transform.eulerAngles = targetRotation;
-                isTurning = false;
-                transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-            }
-        }
-    }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            targetRotation = transform.eulerAngles + new Vector3(0, 0, -90);
-            isTurning = false;
-            transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-        }
+        // Calculate the direction to the current waypoint
+        Vector2 direction = waypoints[currentWaypoint].position - transform.position;
+
+        // Rotate the car to face the direction of the waypoint
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+        // Move the car towards the current waypoint
+        transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypoint].position, speed * Time.deltaTime);
     }
 }
 
