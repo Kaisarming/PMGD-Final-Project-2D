@@ -9,9 +9,11 @@ public class GameTimeLimit : MonoBehaviour
     public Text timerText; // Komponen teks untuk menampilkan waktu
 
     private bool isTimerRunning = false; // Flag untuk mengetahui apakah timer sedang berjalan
+    public GameObject losePanel;
 
     private void Start()
     {
+        losePanel.SetActive(false);
         isTimerRunning = true; // Mengaktifkan timer ketika game dimulai
     }
 
@@ -28,6 +30,8 @@ public class GameTimeLimit : MonoBehaviour
             {
                 isTimerRunning = false; // Menonaktifkan timer ketika waktu habis
                 DetermineOutcome(false); // Menentukan hasil kekalahan
+                losePanel.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }
@@ -60,5 +64,4 @@ public class GameTimeLimit : MonoBehaviour
         // Menampilkan layar kemenangan atau kekalahan atau kembali ke menu utama
         // (tidak termasuk dalam contoh script ini)
     }
-    
 }

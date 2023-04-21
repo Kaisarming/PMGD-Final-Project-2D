@@ -120,10 +120,10 @@ TextureImporter:
       name: bus_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 50
-        width: 79
-        height: 45
+        x: 5
+        y: 10
+        width: 45
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b31f8c6346c074b8279e7cf1130a72
-      internalID: 1391919220
+      spriteID: df806ddc1cf6f3641b8c946fea925ea5
+      internalID: -1014930853
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: bus_1
       rect:
         serializedVersion: 2
-        x: 10
-        y: 2
-        width: 79
-        height: 44
+        x: 54
+        y: 10
+        width: 44
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed7b50b0cdd97e44bb6db02ed698417
-      internalID: -823484720
+      spriteID: 57dd4fef068e0ce4e9d658d0d9902950
+      internalID: 1900832506
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bus_0: 1391919220
-      bus_1: -823484720
+      bus_0: -1014930853
+      bus_1: 1900832506
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
