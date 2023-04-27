@@ -29,6 +29,7 @@ public class Dialog : MonoBehaviour
     {
         if (currentLine >= dialogueLines.Length)
         {
+            dialogueBox.SetActive(false);
             return;
         }
 
@@ -66,8 +67,8 @@ public class Dialog : MonoBehaviour
         foreach (char letter in text.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f);
-        }
+            yield return new WaitForSeconds(typingSpeed);
+    }
         isTyping = false;
     }
 }
