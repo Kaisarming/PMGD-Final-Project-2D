@@ -1,26 +1,67 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Immunity : MonoBehaviour
 {
-    public float powerUpDuration; // waktu kekebalan dari serangan musuh
-    public GameObject imun;
-    public GameObject gm;
+    public float duration;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private float timer;
+
+    public GameObject player;
+
+    private HealthManager healthManager;
+    private LifeCount lifeCount;
+    public GameObject txtFromUnity;
+    public GameObject powerUp;
+
+    void Start()
     {
-        if (other.CompareTag("Player"))
-        {
-            StartCoroutine(PowerUpCoroutine(other)); // memulai Coroutine untuk menjalankan power up
-        }
+
     }
 
-    IEnumerator PowerUpCoroutine(Collider2D player)
+    void Update()
     {
-        Destroy(gameObject);
-        yield return new WaitForSeconds(powerUpDuration);
-        imun.GetComponent<HealthManager>().enabled = false;
-        gm.GetComponent<GameManager>().enabled = false;
+        timer = timer - Time.deltaTime < 0 ? 0 : timer - Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        powerUp.SetActive(false);
+        timer = duration;
+        StartCoroutine(Blinking());
+        DeactivateCollider();
+    }
+
+    private void DeactivateCollider()
+    {
+        healthManager = GameObject.FindObjectOfType<HealthManager>();
+        healthManager.currentHealth = 999;
+        txtFromUnity.GetComponent<Text>().text = healthManager.currentHealth.ToString();
+        player.GetComponent<Collider2D>().enabled = false;
+    }
+
+    private void ActivateCollider()
+    {
+        player.GetComponent<Collider2D>().enabled = true;
+    }
+
+    private IEnumerator Blinking()
+    {
+        SpriteRenderer sr = player.GetComponent<SpriteRenderer>();
+        Color defaultColor = sr.color;
+        Color hitColor = defaultColor;
+        hitColor.a = 0.5f;
+
+        while (timer > 0)
+        {
+            sr.color = hitColor;
+            yield return new WaitForSeconds(0.1f);
+            sr.color = default;
+            yield return new WaitForSeconds(0.1f);
+        }
+        sr.color = defaultColor;
+        ActivateCollider();
     }
 }
