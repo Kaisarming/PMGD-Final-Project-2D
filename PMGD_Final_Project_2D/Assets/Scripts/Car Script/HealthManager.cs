@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
@@ -9,9 +10,17 @@ public class HealthManager : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     public GameObject explosion;
+    public DeadCount dead;
+
+    private int lifeInt;
+    private string lifeString;
+    HealthManager lifeFromHealthManager;
+    public GameObject txtFromUnity;
 
     // AudioSource represent audio sources on 3d
     public AudioSource carExplosion;
+
+    public LifeCount life;
 
     private void Awake()
     {
@@ -29,6 +38,7 @@ public class HealthManager : MonoBehaviour
     {
         // -1 currentHealth
         currentHealth--;
+        LifeFunction();
 
         // If currentHealth is less than or equal to 0
         if (currentHealth <= 0)
@@ -49,7 +59,15 @@ public class HealthManager : MonoBehaviour
     {
         // Make car appear on the screen again
         gameObject.SetActive(true);
+        dead.DeathCount();
         // Make the car health to full health
         currentHealth = maxHealth;
+    }
+
+    public void LifeFunction()
+    {
+        lifeInt = currentHealth;
+        lifeString = lifeInt.ToString();
+        txtFromUnity.GetComponent<Text>().text = lifeString;
     }
 }
