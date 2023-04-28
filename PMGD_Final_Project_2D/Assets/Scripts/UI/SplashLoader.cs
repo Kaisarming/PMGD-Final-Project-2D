@@ -23,7 +23,6 @@ public class SplashLoader : MonoBehaviour
         TargetImage.rectTransform.localScale = new Vector2(Screen.width, Screen.height);
         Logo1.enabled = true;
         Logo2.enabled = false;
-        ctr=0;
     }
 
     void FadeInFunc()
@@ -38,7 +37,8 @@ public class SplashLoader : MonoBehaviour
     void Start()
     {
         if (ctr>3){
-            this.gameObject.SetActive(false);
+            Splash.SetActive(false);
+            Main.SetActive(true);
         }
         else{
             Trigger = false;

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555275277295937430}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e4b3a64839603d43919f53e0caefb75, type: 3}
   m_Name: 
@@ -56,5 +56,5 @@ MonoBehaviour:
   TargetImage: {fileID: 0}
   Logo1: {fileID: 0}
   Logo2: {fileID: 0}
-  FadeSpeed: 2
-  Delay: 2
+  FadeSpeed: 0
+  Delay: 0
