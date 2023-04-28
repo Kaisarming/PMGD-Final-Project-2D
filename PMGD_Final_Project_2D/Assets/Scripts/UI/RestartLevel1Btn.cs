@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class RestartLevel1Btn : MonoBehaviour
 {
+    public string level;
     public void RestartGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(level);
         Time.timeScale = 1;
     }
 }
