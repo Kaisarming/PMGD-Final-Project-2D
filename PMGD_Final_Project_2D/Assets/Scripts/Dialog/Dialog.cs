@@ -13,7 +13,9 @@ public class Dialog : MonoBehaviour
     public int currentLine;
     public Button continueButton;
     public GameObject speedometerUI;
-   
+    public GameObject TimeLimitTxt;
+    public GameObject NPC;
+
 
     private bool isTyping;
     private string currentText;
@@ -25,6 +27,8 @@ public class Dialog : MonoBehaviour
     {
         continueButton.onClick.AddListener(ContinueDialogue);
         speedometerUI.SetActive(false);
+        TimeLimitTxt.GetComponent<GameTimeLimit>().enabled = false;
+        NPC.SetActive(true);
     }
 
     void Update()
@@ -33,6 +37,8 @@ public class Dialog : MonoBehaviour
         {
             dialogueBox.SetActive(false);
             speedometerUI.SetActive(true);
+            TimeLimitTxt.GetComponent<GameTimeLimit>().enabled = true;
+            NPC.SetActive(false);
             return;
         }
 
@@ -73,8 +79,7 @@ public class Dialog : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
-    }
+        }
         isTyping = false;
     }
 }
-
