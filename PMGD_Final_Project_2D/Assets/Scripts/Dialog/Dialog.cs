@@ -12,17 +12,19 @@ public class Dialog : MonoBehaviour
     public string[] dialogueLines;
     public int currentLine;
     public Button continueButton;
+    public GameObject speedometerUI;
+   
 
     private bool isTyping;
     private string currentText;
     private Coroutine typingCoroutine;
-    public float typingSpeed = 0.05f;
+    public float typingSpeed = 1f;
 
 
     void Start()
     {
         continueButton.onClick.AddListener(ContinueDialogue);
-       
+        speedometerUI.SetActive(false);
     }
 
     void Update()
@@ -30,6 +32,7 @@ public class Dialog : MonoBehaviour
         if (currentLine >= dialogueLines.Length)
         {
             dialogueBox.SetActive(false);
+            speedometerUI.SetActive(true);
             return;
         }
 
@@ -40,8 +43,9 @@ public class Dialog : MonoBehaviour
         else
         {
             currentText = dialogueLines[currentLine];
-            typingCoroutine = StartCoroutine(TypingEffect(currentText));
             characterSprite.sprite = characterSprites[currentLine];
+            dialogueText.text = currentText;
+            typingCoroutine = StartCoroutine(TypingEffect(currentText));
             currentLine++;
         }
     }
@@ -59,6 +63,7 @@ public class Dialog : MonoBehaviour
             isTyping = true;
         }
     }
+
 
     IEnumerator TypingEffect(string text)
     {
