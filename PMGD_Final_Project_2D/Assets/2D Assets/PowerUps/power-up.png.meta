@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: power-up_0
+      name: IncreaseTime
       rect:
         serializedVersion: 2
         x: 0
@@ -212,9 +212,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Immunity: 400176613
+      IncreaseTime: 1909523906
       Increase_Attack_Power: -1522548087
       Increase_Speed: 1750785163
-      power-up_0: 1909523906
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

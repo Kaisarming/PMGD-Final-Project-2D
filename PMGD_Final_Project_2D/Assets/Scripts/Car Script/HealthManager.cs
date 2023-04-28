@@ -38,7 +38,16 @@ public class HealthManager : MonoBehaviour
     {
         // -1 currentHealth
         currentHealth--;
-        LifeFunction();
+
+        if (currentHealth <= 3)
+        {
+            LifeFunction();
+        }
+        else if (currentHealth > 3)
+        {
+            txtFromUnity.GetComponent<Text>().text = "Infinite";
+        }
+        
 
         // If currentHealth is less than or equal to 0
         if (currentHealth <= 0)

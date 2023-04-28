@@ -36,7 +36,7 @@ public class GameTimeLimit : MonoBehaviour
         }
     }
 
-    private void UpdateTimerText()
+    public void UpdateTimerText()
     {
         int minutes = Mathf.FloorToInt(timeRemaining / 60f); // Menghitung menit
         int seconds = Mathf.FloorToInt(timeRemaining % 60f); // Menghitung detik
