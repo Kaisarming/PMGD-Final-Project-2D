@@ -9,21 +9,6 @@ public class DeadCount : MonoBehaviour
     private int deathCount;
     public GameObject canvas;
 
-    //void Start()
-    //{
-    //    DiedIntTxt.text = deathCount.ToString();
-    //}
-
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    if (HealthManager.Respawn())
-    //    {
-    //        deathCount++;
-    //        DiedIntTxt.text = deathCount.ToString();
-    //    }
-    //}
-
     public void DeathCount()
     {
         deathCount++;

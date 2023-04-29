@@ -6,13 +6,7 @@ using UnityEngine;
 public class InvincibleFrame : MonoBehaviour
 {
     public float duration;
-
     private float timer;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {

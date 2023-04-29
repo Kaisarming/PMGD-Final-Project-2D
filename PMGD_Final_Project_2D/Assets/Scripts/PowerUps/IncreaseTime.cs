@@ -19,6 +19,5 @@ public class IncreaseTime : MonoBehaviour
             // hapus game object power-up
             Destroy(gameObject);
         }
-
     }
 }
