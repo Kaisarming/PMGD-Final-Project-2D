@@ -5,52 +5,27 @@ using UnityEngine.UI;
 
 public class MusicButton : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public Button musicButton;
-    public Button muteButton;
+    public GameObject audioSource;
     public GameObject musicIcon;
     public GameObject muteIcon;
 
-    //private bool isMuted = false;
-
-    private void Start()
+    public void Start()
     {
+        audioSource.SetActive(true);
         muteIcon.SetActive(false);
-        musicButton.onClick.AddListener(MusicMute);
-        muteButton.onClick.AddListener(MusicOn);
     }
 
-    private void MusicMute()
+    public void MusicMute()
     {
-        /*isMuted = !isMuted;
-        if (isMuted)
-        {*/
-            audioSource.mute = true;
-            muteIcon.SetActive(true);
-            musicIcon.SetActive(false);
-        /*}
-        else
-        {
-            audioSource.mute = false;
-            muteIcon.SetActive(false);
-            musicIcon.SetActive(true);
-        }*/
+        audioSource.SetActive(false);
+        muteIcon.SetActive(true);
+        musicIcon.SetActive(false);
     }
 
-    private void MusicOn()
+    public void MusicOn()
     {
-        /*isMuted = !isMuted;
-        if (isMuted)
-        {*/
-            audioSource.mute = false;
-            muteIcon.SetActive(false);
-            musicIcon.SetActive(true);
-        /*}
-        else
-        {
-            audioSource.mute = true;
-            muteIcon.SetActive(true);
-            musicIcon.SetActive(false);
-        }*/
+        audioSource.SetActive(true);
+        muteIcon.SetActive(false);
+        musicIcon.SetActive(true);
     }
 }

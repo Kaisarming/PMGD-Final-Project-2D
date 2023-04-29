@@ -10,7 +10,8 @@ public class MainMenuBtn : MonoBehaviour
     public string mainMenuSceneName; // Nama scene menu utama
 
     private Image buttonImage; // Komponen Image dari tombol
-    public GameObject splashscreen;
+    //public GameObject splashscreen;
+    //public SplashLoader splashOff;
 
     private void Start()
     {
@@ -27,7 +28,8 @@ public class MainMenuBtn : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        splashscreen.SetActive(false);
+        //splashOff.GetComponent<SplashLoader>().enabled = false;
+        //splashscreen.SetActive(false);
         SceneManager.LoadScene(mainMenuSceneName); // Memuat scene menu utama
     }
 }

@@ -2,89 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SplashLoader : MonoBehaviour
 {
-    private int ctr;
-    public GameObject Splash;
-    public GameObject Main;
-    private bool Trigger;
-    private bool Switch;
-    public AudioSource BGM;
-    public Image BG;
-    public Image TargetImage;
-    public Image Logo1;
-    public Image Logo2;
-    public float FadeSpeed;
-    public float Delay;
+    public Image splashImage1;
+    public Image splashImage2;
 
-    void Awake()
+    IEnumerator Start()
     {
-        TargetImage.rectTransform.localScale = new Vector2(Screen.width, Screen.height);
-        Logo1.enabled = true;
-        Logo2.enabled = false;
+        splashImage1.canvasRenderer.SetAlpha(0.0f);
+        splashImage2.canvasRenderer.SetAlpha(0.0f);
+
+        FadeIn(splashImage1);
+        yield return new WaitForSeconds(2.5f);
+        FadeOut(splashImage1);
+        yield return new WaitForSeconds(2f);
+        FadeIn(splashImage2);
+        yield return new WaitForSeconds(2.5f);
+        FadeOut(splashImage2);
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MainMenu");
     }
 
-    void FadeInFunc()
+    void FadeIn(Image image)
     {
-        TargetImage.color = Color.Lerp(TargetImage.color, Color.clear, FadeSpeed * Time.deltaTime);
+        image.CrossFadeAlpha(1.0f, 1.5f, false);
     }
-    void FadeOutFunc()
+    void FadeOut(Image image)
     {
-        TargetImage.color = Color.Lerp(TargetImage.color, Color.black, FadeSpeed * Time.deltaTime);
-    }
-
-    void Start()
-    {
-        if (ctr>3){
-            Splash.SetActive(false);
-            Main.SetActive(true);
-        }
-        else{
-            Trigger = false;
-            Splash.SetActive(true);
-            Main.SetActive(false);
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (ctr==3){
-            BG.enabled = false;
-            Logo2.enabled = false;
-            Invoke("FadeInFunc", Delay);
-            Main.SetActive(true);
-            if (!BGM.isPlaying)
-            {BGM.Play();}
-            if (TargetImage.color.a <= 0.05f)
-            {
-                Splash.SetActive(false);
-                ctr++;
-            }
-        }
-        else if (ctr<3){
-            if (TargetImage.color.a <= 0.05f){
-                Switch = false;
-                Trigger = false;
-                if (!Switch){
-                    Invoke("FadeOutFunc", Delay);
-                }
-            }
-            if (TargetImage.color.a >= 0.95f){
-                Switch = true;
-                if (ctr==2){
-                Logo1.enabled = false;
-                Logo2.enabled = true;
-                }
-                if (!Trigger){
-                ctr++;
-                Trigger = true;
-                }
-                if (Switch){
-                    Invoke("FadeInFunc", Delay);
-                }
-            }
-        }
+        image.CrossFadeAlpha(0.0f, 2.5f, false);
     }
 }
