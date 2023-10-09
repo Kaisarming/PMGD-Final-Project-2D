@@ -132,12 +132,14 @@ public class MainCar : MonoBehaviour
 
     private void StartSkid()
     {
+        // Make the tire skid
         leftTyre.GetComponent<TrailRenderer>().emitting = true;
         rightTyre.GetComponent<TrailRenderer>().emitting = true;
     }
 
     private void StopSkid()
     {
+        // Stop the tire from skidding
         leftTyre.GetComponent<TrailRenderer>().emitting = false;
         rightTyre.GetComponent<TrailRenderer>().emitting = false;
     }
